@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: 300px auto 300px; 
+    /* grid-template-columns: 300px auto 300px 200px; */
+  }
+  .left {
+    background-color: #ff0000;
+  }
+  .center {
+    background-color: #00ff00;
+  }
+  .right {
+    background-color: #0000ff;
+  }
+  /* .add {
+    background-color: #000000;
+  } */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left"></div>
+    <div class="center"></div>
+    <div class="right"></div>
+    <!-- <div class="add"></div> -->
+  </div>
+</body>
+</html>
