@@ -43,3 +43,18 @@
 顺序： :link :visited :focus :hover :active
 hover 必须放到link visited 之后才有效
 active 必须放到 hover 后面才有效
+
+## css 选择器优先级
+
+优先级是由 A 、B、C、D 的值来决定的，其中它们的值计算规则如下：
+
+如果存在内联样式，那么 A = 1, 否则 A = 0;
+B 的值等于 ID选择器 出现的次数;
+C 的值等于 类选择器 和 属性选择器 和 伪类 出现的总次数;
+D 的值等于 标签选择器 和 伪元素 出现的总次数 。
+
+## css加载不会阻塞DOM树的解析，css 加载会阻塞DOM 树的渲染，css 加载会阻塞后面的js 的执行
+
+1. DOM解析和CSS解析是两个并行的进程，所以这也解释了为什么CSS加载不会阻塞DOM的解析。
+2. 然而，由于Render Tree是依赖于DOM Tree和CSSOM Tree的，所以他必须等待到CSSOM Tree构建完成，也就是CSS资源加载完成(或者CSS资源加载失败)后，才能开始渲染。因此，CSS加载是会阻塞Dom的渲染的。
+3. 由于js可能会操作之前的Dom节点和css样式，因此浏览器会维持html中css和js的顺序。因此，样式表会在后面的js执行前先加载执行完毕。所以css会阻塞后面js的执行

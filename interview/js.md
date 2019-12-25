@@ -40,3 +40,7 @@ var foo = 1
 CommonJS 是同步加载的 ES6模块化是异步加载的
 CommonJS 是执行时加载 ES6模块化是编译时加载
 CommonJS 导出的是值的拷贝 ES6 导出的是值的引用
+
+## DOMContentLoaded
+1. 如果页面中同时存在css和js，并且存在js在css后面，则DOMContentLoaded事件会在css加载完后才执行。
+2. 其他情况下，DOMContentLoaded都不会等待css加载，并且DOMContentLoaded事件也不会等待图片、视频等其他资源加载。
