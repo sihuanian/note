@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .outter {
+      background-color: pink;
+      padding: 20px;
+      width: 600px;
+      height: 600px;
+    }
+    .inner {
+      background-color: #00ffff;
+      width: 300px;
+      height: 300px;
+    }
+    .inner::after {
+      content: 'djfsl';
+      background-color: #fff;
+      width: 10px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="outter">
+    <div class="inner"></div>
+  </div>
+
+  <script>
+    const inner = document.querySelector('.inner')
+    inner.addEventListener('click', (e) => {
+      e.stopPropagation()
+      console.log('inner')
+    }, false)
+  </script>
+</body>
+</html>
