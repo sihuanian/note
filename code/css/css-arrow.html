@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .arrow::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    transform: rotate(-135deg);
+  }
+
+  .tri {
+    border-width: 10px;
+    border-style: solid;
+    border-color: #f00 #0f0 #00f #ffff00;
+    width: 0;
+    height: 0;
+  }
+
+  .tixing {
+    border: 10px solid transparent;
+    border-top-color: #ff0000;
+    width: 30px;
+    height: 30px;
+  }
+  </style>
+</head>
+<body>
+  <div class="arrow">css 箭头</div>
+  <div class="tri"></div>
+  <div class="tixing"></div>
+</body>
+</html>

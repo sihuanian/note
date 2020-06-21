@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* .container p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    } */
+/*     .container p{
+      position: relative;
+      height: 45px;
+      line-height: 15px;
+      overflow: hidden;
+    }
+    .container p::after {
+      position: absolute;
+      content: '...';
+      top: 45px;
+      right: 20px;
+    } */
+    .container p {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -webkit-line-clamp: 3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>HTTP/1.1 200 OKCache-Control: no-cacheContent-Type: image/pngLast-Modified: Tue, 08 Nov 2016 06:59:00 GMTAccept-Ranges: bytesDate: Thu, 10 Nov 2016 02:48:50 GMTContent-Length: 3534HTTP/1.1 200 OKCache-Control: no-cacheContent-Type: image/pngLast-Modified: Tue, 08 Nov 2016 06:59:00 GMTAccept-Ranges: bytesDate: Thu, 10 Nov 2016 02:48:50 GMTContent-Length: 3534HTTP/1.1 200 OKCache-Control: no-cacheContent-Type: image/pngLast-Modified: Tue, 08 Nov 2016 06:59:00 GMTAccept-Ranges: bytesDate: Thu, 10 Nov 2016 02:48:50 GMTContent-Length: 3534HTTP/1.1 200 OKCache-Control: no-cacheContent-Type: image/pngLast-Modified: Tue, 08 Nov 2016 06:59:00 GMTAccept-Ranges: bytesDate: Thu, 10 Nov 2016 02:48:50 GMTContent-Length: 3534</p>
+  </div>
+</body>
+</html>

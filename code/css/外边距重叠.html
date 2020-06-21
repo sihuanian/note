@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  .box1, .box2 {
+    width: 200px;
+    height: 200px;
+  }
+  .box1 {
+    background-color: pink;
+    margin-bottom: 20px;
+  }
+  .box2 {
+    background-color: #ffff00;
+    margin-top: -30px;
+  }
+  </style>
+
+</head>
+<body>
+  <!-- 两个相邻的外边距都是正数时，折叠结果是它们两者之间较大的值。
+        两个相邻的外边距都是负数时，折叠结果是两者绝对值的较大值。
+        两个外边距一正一负时，折叠结果是两者的相加的和。 -->
+  <div class="box1"></div>
+  <div class="box2"></div>
+</body>
+</html>
