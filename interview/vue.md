@@ -44,8 +44,12 @@ mounted() {
 1. Vue 的一个内置组件，不会被渲染成DOM结构
 2. 会缓存包裹组件的状态，避免重新渲染
 3. 具有两个生命周期方法 actived deactived
+<<<<<<< HEAD
 <<<<<<< acd44f89644ebca8121c0b26bfadc7ba48f392a4
 4. include exclude 前者表示包含的组件被缓存，后者表示包含的组件不能被缓存，与name值匹配,其中 exclude 的优先级比 include 高；
+=======
+4. include exclude 前者表示包含的组件被缓存，后者表示包含的组件不能被缓存，与name值匹配
+>>>>>>> update:第一次提交笔记内容
 =======
 4. include exclude 前者表示包含的组件被缓存，后者表示包含的组件不能被缓存，与name值匹配
 >>>>>>> update:第一次提交笔记内容

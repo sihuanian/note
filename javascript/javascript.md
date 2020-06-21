@@ -12,8 +12,12 @@
 
 ​	数组方法总结
 
+<<<<<<< HEAD
 <<<<<<< acd44f89644ebca8121c0b26bfadc7ba48f392a4
 - 修改原数组的有：(pop,push,unshift,shift[返回新数组的长度]),splice(返回改变部分)，sort(根据ASCLL表排序，返回排序之后的结果)
+=======
+- 修改原数组的有：(pop,push,unshift,shift[返回新数组的长度]),splice(返回改变部分)，sort(根据ASCLL表排序，返回排序之后的结果), reverse
+>>>>>>> update:第一次提交笔记内容
 =======
 - 修改原数组的有：(pop,push,unshift,shift[返回新数组的长度]),splice(返回改变部分)，sort(根据ASCLL表排序，返回排序之后的结果), reverse
 >>>>>>> update:第一次提交笔记内容
