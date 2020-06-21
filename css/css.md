@@ -234,7 +234,10 @@ p:first-child{color:#f00;}
    parentElement::after {
        content: '';
        visibility: hidden;
+<<<<<<< acd44f89644ebca8121c0b26bfadc7ba48f392a4
        overflow: hidden;
+=======
+>>>>>>> update:第一次提交笔记内容
        clear: both;
        display: block;
        height: 0;
@@ -250,6 +253,7 @@ p:first-child{color:#f00;}
 
 1. animation-fill-mode forwards // 动画结束之后保持动画最后的样式
 
+<<<<<<< acd44f89644ebca8121c0b26bfadc7ba48f392a4
 ## white-wrap word-break overflow-wrap(word-wrap)
 
 1. white-wrap: normal | nowrap(永不换行) | pre(preserve 保留，保留空格与换行，不过自动换行没了) | pre-wrap(保留空格和换行符，且可以自动换行) | pre-line()
@@ -264,3 +268,6 @@ p:first-child{color:#f00;}
 | pre | √ | √ | × | √ |
 | pre-wrap | √ | √ | √ | √  |
 | pre-line | √ | ×（合并） | √ | √ |
+=======
+
+>>>>>>> update:第一次提交笔记内容
